@@ -4,9 +4,27 @@
     width: 100px;
     margin: 5px;
 }
-.box1 {
+.bigBox {
     background-color: rgb(70, 98, 255);
     height: 100px;
     width: 100px;
     margin: 5px;
+}
+
+#changeText {
+    background-color: burlywood;
+    padding: 20px;
+    border-radius: 10px;   
+}
+
+.green {
+    margin: 50px;
+    padding: 50px;
+    background-color: green;
+}
+
+.grey {
+    margin: 50px;
+    padding: 50px;
+    background-color: grey;
 }
