@@ -5,7 +5,6 @@ let par = document.getElementById("par");
 
 cloud.addEventListener("click", el => {
     console.log("i'm cloud");
-    console.log("i'm cloud");
     par.innerHTML = "i'm cloud";
     el.stopPropagation();
 });
