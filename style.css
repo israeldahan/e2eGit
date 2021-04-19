@@ -28,3 +28,16 @@
     padding: 50px;
     background-color: grey;
 }
+#divDragAndDrop{
+    width: 60px;
+    height: 60px;
+    background-color: chocolate;
+}
+
+
+
+.nav-link.active{
+    background-color: cyan;
+    margin: 10px;
+    padding: 10px;
+}
