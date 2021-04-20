@@ -41,3 +41,10 @@
     margin: 10px;
     padding: 10px;
 }
+
+.tab-pane {
+    display: none;
+}
+.tab-pane.active {
+    display: block;
+}

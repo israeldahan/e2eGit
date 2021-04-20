@@ -40,17 +40,30 @@
       </div>
 
       <script>
+          setInterval(function(){ alert("Hello"); }, 10000);
+          // setTimeout(function(){ alert("Hello"); }, 1000);
           let navLink = document.querySelectorAll(".nav-link");
+          let tabPane = document.querySelectorAll(".tab-pane");
+          let chooseTab;
           navLink.forEach(el => {
-              el.addEventListener("click", ev => {
+              el.addEventListener("click", f => {
+                chooseTab = f.target.id;
                 navLink.forEach(i => {
                     i.className = "nav-link";
-                })
+                });
+                tabPane.forEach(iTab => {
+                    iTab.className = "tab-pane";
+                    if (iTab.getAttribute("aria-labelledby") == chooseTab){
+                        console.log(iTab);
+                        iTab.setAttribute("class", "tab-pane active");
+                    }
+                });
                 console.log("event");
-                console.log(event);
-                event.target.setAttribute("class", "nav-link active");
+                console.log(f);
+                f.target.setAttribute("class", "nav-link active");
               });
           });
+          
       </script>
 </body>
 </html>
